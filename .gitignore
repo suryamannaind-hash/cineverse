@@ -1,0 +1,51 @@
+﻿# Critical Security & Secrets (NEVER upload these to GitHub)
+.env
+.env.local
+.env.*.local
+*.env
+*.pem
+*.key
+*.cert
+*.secret
+
+# Local Databases (Contains local user activity, passwords, review cache)
+*.db
+*.sqlite
+*.sqlite3
+cineverse.db
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Packaging & Distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor & OS Temp Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

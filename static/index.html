@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVerse — Modern Cinema Discovery & Review Platform</title>
+  <meta name="description" content="A luxury 3D cinema-inspired movie discovery and review experience with real TMDB metadata and community discussions.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+
+  <!-- Google Fonts: Cinzel & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cinema: {
+              red: '#e50914',
+              gold: '#d4af37',
+              dark: '#050505',
+              surface: '#0e0e12'
+            }
+          },
+          fontFamily: {
+            cinematic: ['Cinzel', 'serif'],
+            sans: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Cinema Custom CSS -->
+  <link rel="stylesheet" href="/static/css/cinema.css">
+</head>
+<body class="bg-[#050505] text-[#f3f4f6] selection:bg-red-600 selection:text-white antialiased">
+  
+  <!-- Global Cinema Velvet Curtain Transition Layer -->
+  <div id="cinema-curtain-transition">
+    <div class="transition-curtain-half" id="transition-curtain-left"></div>
+    <div class="transition-curtain-half" id="transition-curtain-right"></div>
+  </div>
+
+  <!-- Global Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Main View Container -->
+  <main id="main-content" class="min-h-screen"></main>
+
+  <!-- Global Modals Containers -->
+  <div id="trailer-modal-container"></div>
+  <div id="ticket-booth-modal-container"></div>
+  <div id="settings-modal-container"></div>
+
+  <!-- Core Scripts -->
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/state.js"></script>
+  <script src="/static/js/sound-effects.js"></script>
+  <script src="/static/js/canvas-effects.js"></script>
+  <script src="/static/js/card-3d.js"></script>
+
+  <!-- Components -->
+  <script src="/static/js/components/curtain-transition.js"></script>
+  <script src="/static/js/components/navbar.js"></script>
+  <script src="/static/js/components/hero-screen.js"></script>
+  <script src="/static/js/components/carousel-3d.js"></script>
+  <script src="/static/js/components/popular-ranked.js"></script>
+  <script src="/static/js/components/community-spotlight.js"></script>
+  <script src="/static/js/components/explore-view.js"></script>
+  <script src="/static/js/components/movie-detail-view.js"></script>
+  <script src="/static/js/components/lobby-view.js"></script>
+  <script src="/static/js/components/profile-view.js"></script>
+  <script src="/static/js/components/trailer-modal.js"></script>
+  <script src="/static/js/components/ticket-booth-modal.js"></script>
+  <script src="/static/js/components/settings-modal.js"></script>
+  <script src="/static/js/components/attribution-view.js"></script>
+
+  <!-- App Bootstrapper -->
+  <script src="/static/js/app.js"></script>
+
+</body>
+</html>
