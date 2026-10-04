@@ -3,6 +3,11 @@
 A luxury, interactive 3D modern cinema-themed movie discovery and community review web platform built with a Python backend (FastAPI, SQLAlchemy, Uvicorn, httpx) and custom responsive front-end aesthetics.
 
 ---
+## 🚀 Live Demo
+
+🌐 **Live Website:** https://cineverse-wi7b.onrender.com/
+
+📂 **GitHub Repository:** https://github.com/suryamannaind-hash/cineverse
 
 ## ✨ Features
 
